@@ -7,7 +7,7 @@ const blog = require('./blog');
 
 exports.registerRoutes = function (api) {
     var corsHandler = cors({
-        origin: 'http://mgprog-web.azurewebsites.net/',
+        origin: 'http://mgprog-web.azurewebsites.net',
         optionsSuccessStatus: 200
     });
     api.post('/user/register', user.register);
